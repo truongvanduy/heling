@@ -122,6 +122,9 @@
   }
 }
 @media screen and (max-width: 767.98px) {
+  .logo {
+    width: 77px;
+  }
   .menu {
     position: fixed;
     top: 0;
@@ -169,6 +172,8 @@
   .toggle {
     background-color: transparent;
     display: initial;
+    padding-left: 10px;
+    margin-left: 20px;
   }
 }
 

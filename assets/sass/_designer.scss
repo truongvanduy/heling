@@ -25,4 +25,23 @@
     height: 100%;
     object-fit: cover;
   }
+  @media screen and (max-width: 1279.98px) {
+    &-content {
+      gap: 0 60px;
+    }
+    &-img {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    padding-top: 120px;
+    &-content {
+      flex-direction: column;
+      gap: 70px 0;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+  
 }

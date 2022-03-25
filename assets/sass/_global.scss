@@ -175,8 +175,17 @@ a {
       &--01 {
         @include heading(52px, 61px);
       }
+      &--02 {
+        @include heading(47px, 52px);
+      }
       &--03 {
         @include heading(40px, 50px);
+      }
+      &--05 {
+        @include heading(40px, 50px);
+      }
+      &--btn {
+        @include heading(20px, 30px);
       }
     }
   }
@@ -192,6 +201,10 @@ a {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .px-20 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .heading {
     &.heading {
       &--01 {
@@ -205,6 +218,15 @@ a {
       }
       &--04 {
         @include heading(36px, 42px);
+      }
+      &--05 {
+        @include heading(32px, 40px);
+      }
+      &--06 {
+        @include heading(20px, 30px);
+      }
+      &--btn {
+        @include heading(18px, 30px);
       }
     }
   }

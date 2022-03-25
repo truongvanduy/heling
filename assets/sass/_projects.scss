@@ -1,0 +1,28 @@
+.project {
+  padding-top: 120px;
+  &-top {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &-heading, &-btn {
+    width: fit-content;
+  }
+  &-slider {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../assets/img/slider.png");
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    padding-top: 44.47%;
+    position: relative;
+    &-text {
+      position: absolute;
+      left: 168px;
+      bottom: 65px;
+    }
+  }
+  &-name {
+    margin-bottom: 10px;
+  }
+}

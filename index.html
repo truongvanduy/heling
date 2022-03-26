@@ -8,24 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&amp;family=Prata&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
   </head>
   <body> 
     <div class="wrapper"> 
       <header class="header background-dark text-light">
-        <div class="nav background-dark">
+        <div class="nav background-dark text-light">
           <div class="nav-content px-20">
             <div class="logo"><img src="./assets/img/logo.svg" alt="Heling"></div>
-            <ul class="menu"> 
-              <li class="menu-item active"><a class="menu-link paragraph paragraph--02" href="#!">home</a></li>
-              <li class="menu-item"><a class="menu-link paragraph paragraph--02" href="#projects">projects</a></li>
-              <li class="menu-item"><a class="menu-link paragraph paragraph--02" href="#designers">designers</a></li>
-              <li class="menu-item"><a class="menu-link paragraph paragraph--02" href="#articles">articles</a></li>
+            <ul class="menu js-menu background-dark text-light">
+              <button class="toggle js-toggle menu-toggle"><i class="fa-solid fa-xmark"></i></button>
+              <li class="menu-item active"><a class="menu-link js-menu-link paragraph paragraph--02" href="#!">home</a></li>
+              <li class="menu-item"><a class="menu-link js-menu-link paragraph paragraph--02" href="#projects">projects</a></li>
+              <li class="menu-item"><a class="menu-link js-menu-link paragraph paragraph--02" href="#designers">designers</a></li>
+              <li class="menu-item"><a class="menu-link js-menu-link paragraph paragraph--02" href="#articles">articles</a></li>
             </ul>
             <div class="header-btn-group"> 
               <div class="btn header-btn"><a class="header-btn-link heading heading--btn">Contact</a></div>
-              <button class="toggle"> <img src="./assets/img/menu.svg" alt="toggle menu button"></button>
+              <button class="toggle js-toggle"><img src="./assets/img/menu.svg" alt="toggle menu button"></button>
             </div>
           </div>
         </div>
@@ -102,7 +104,7 @@
             <div class="designer-img"> <img srcSet="./assets/img/designer.png 2x" alt="designer"></div>
           </div>
         </section>
-        <section class="article background-light text-dark px-20">
+        <section class="article background-light text-dark px-20" id="articles">
           <div class="article-content section-content"> 
             <div class="article-top"> 
               <h2 class="article-heading heading heading--02">Our latest articles</h2>
@@ -159,5 +161,6 @@
         </div>
       </footer>
     </div>
+    <script src="./app.js"> </script>
   </body>
 </html>

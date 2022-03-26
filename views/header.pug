@@ -1,21 +1,23 @@
 header.header.background-dark.text-light
-  .nav.background-dark
+  .nav.background-dark.text-light
     .nav-content.px-20
       .logo
         img(src="./assets/img/logo.svg", alt="Heling")
-      ul.menu 
+      ul.menu.js-menu.background-dark.text-light
+        button.toggle.js-toggle.menu-toggle
+          <i class="fa-solid fa-xmark"></i>
         li.menu-item.active
-          a.menu-link.paragraph.paragraph--02(href="#!") home
+          a.menu-link.js-menu-link.paragraph.paragraph--02(href="#!") home
         li.menu-item
-          a.menu-link.paragraph.paragraph--02(href="#projects") projects
+          a.menu-link.js-menu-link.paragraph.paragraph--02(href="#projects") projects
         li.menu-item
-          a.menu-link.paragraph.paragraph--02(href="#designers") designers
+          a.menu-link.js-menu-link.paragraph.paragraph--02(href="#designers") designers
         li.menu-item
-          a.menu-link.paragraph.paragraph--02(href="#articles") articles
+          a.menu-link.js-menu-link.paragraph.paragraph--02(href="#articles") articles
       .header-btn-group 
         .btn.header-btn
           a.header-btn-link.heading.heading--btn Contact
-        button.toggle 
+        button.toggle.js-toggle
           img(src="./assets/img/menu.svg", alt="toggle menu button")
   .header-line-set-full.line-set.line-set--light.line-set--justify 
     .line-item 

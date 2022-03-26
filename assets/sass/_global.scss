@@ -1,6 +1,7 @@
 html {
   font-family: 'Prata', serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 @mixin heading($fontSize, $lineHeight) {
